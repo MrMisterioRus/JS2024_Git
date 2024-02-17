@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .text {
+    font-size: 3em;
+    font-family: Arial, sans-serif;
+    color: #333; /* цвет текста */
+    white-space: nowrap;
+    animation: rotateText 5s linear infinite;
+  }
+  
+  @keyframes rotateText {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .text span {
+    display: inline-block;
+  }
+  
